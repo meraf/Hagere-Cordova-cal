@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Azures BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-highlight="blue2">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <!-- header and footer bar go here-->
+    <div class="header header-fixed header-auto-show header-logo-app">
+        <a href="index.html" class="header-title">Shebelawe</a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-highlights" class="header-icon header-icon-3"><i class="fas fa-brush"></i></a>
+
+        
+    </div>
+
+    
+    <div class="page-content">
+        
+        <div class="page-title page-title-large">
+            <h2 data-username="Enabled!" class="greeting-text" style="opacity: 0%;"> </h2>
+            <a href="#" data-menu="menu-main" class="bg-fade-gray1-dark shadow-xl preload-img" data-src="images/avatars/5s.png"></a>
+        </div>
+        <div class="card header-card shape-rounded" data-card-height="210">
+            <div class="card-overlay bg-highlight opacity-95"></div>
+            <div class="card-overlay dark-mode-tint"></div>
+            <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+        </div>
+        
+
+        
+    <div class="page-content">
+        
+        <div class="page-title page-title-small">
+            <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Contact us</h2>
+        <br>    
+        </div>
+        
+ 
+
+
+        <div class="formValidationError bg-red2-dark content rounded-sm shadow-xl" id="contactNameFieldError">
+            <p class="text-center text-uppercase p-2 color-white font-900 ">Name is required!</p>
+        </div>
+        <div class="formValidationError bg-red2-dark content rounded-sm shadow-xl" id="contactEmailFieldError">
+            <p class="text-center text-uppercase p-2 color-white font-900">Mail address required!</p>
+        </div>
+        <div class="formValidationError bg-red2-dark content rounded-sm shadow-xl" id="contactEmailFieldError2">
+            <p class="text-center text-uppercase p-2 color-white font-900">Mail address must be valid!</p>
+        </div>
+        <div class="formValidationError bg-red2-dark content rounded-sm shadow-xl" id="contactMessageTextareaError">
+            <p class="text-center text-uppercase p-2 color-white font-900">Message field is empty!</p>
+        </div>
+
+        <div class="formSuccessMessageWrap card card-style">
+            <div class="shadow-l rounded-m bg-gradient-green1 mr-n1 ml-n1 mb-n1 ">
+                <h1 class="color-white text-center pt-4"><i class="fa fa-check-circle fa-3x shadow-s scale-box rounded-circle"></i></h1>
+                <h2 class="color-white bold text-center pt-3">Message Sent</h2>
+                <p class="color-white pb-4 text-center mt-n2 mb-0">We'll get back to you shortly.</p>
+            </div>
+        </div>
+        
+        <div class="formSuccessMessageWrap card card-style">
+            <div class="content text-center">
+                <h2>Meanwhile, let's get social!</h2>
+                <p class="boxed-text-xl">
+                    Here are our social media platforms! Follow us for the latest updates or just say hello! 
+                </p>
+                <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-instagram ml-3 mr-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="card card-style contact-form">
+            <div class="content">
+                <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                    <fieldset>
+                        <div class="form-field form-name">
+                            <label class="contactNameField color-theme" for="contactNameField">Name:<span>(required)</span></label>
+                            <input type="text" name="contactNameField" value="" class="contactField round-small requiredField" id="contactNameField" />
+                        </div>
+                        <div class="form-field form-email">
+                            <label class="contactEmailField color-theme" for="contactEmailField">Email:<span>(required)</span></label>
+                            <input type="text" name="contactEmailField" value="" class="contactField round-small requiredField requiredEmailField" id="contactEmailField" />
+                        </div>
+                        <div class="form-field form-text">
+                            <label class="contactMessageTextarea color-theme" for="contactMessageTextarea">Message:<span>(required)</span></label>
+                            <textarea name="contactMessageTextarea" class="contactTextarea round-small requiredField" id="contactMessageTextarea"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <input type="submit" class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-sm  shadow-xl contactSubmitButton" value="Send Message" data-formId="contactForm" />
+                        </div>
+                    </fieldset>
+                </form>			
+            </div>
+        </div>
+       <div class="card card-style">
+            <div class="responsive-iframe">
+                <iframe src='https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed' frameborder='0' allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h3 class="font-700">Postal Information</h3>
+                <p class="pb-0 mb-0">PO Box 22161 Street Addis East</p>
+                <p class="pb-0 mb-0">PO Box 16122 Collins Addis West</p>
+                <p class="pb-0">Piassa Addis Ababa</p>
+
+                <div class="divider"></div>
+
+                <h3 class="font-700">Title</h3>
+                <p class="pb-0 mb-0">121 King Street, Addis Ababa</p>
+                <p class="pb-0 mb-0">PO Box 16122 sheger Street West</p>
+                <p class="pb-0">Piassa Addis Ababa</p>
+
+                <div class="list-group list-custom-small">
+                    <a href="tel:+1 234 567 890">
+                        <i class="fa font-14 fa-phone color-phone"></i>
+                        <span>+251 921 215 2154</span>
+                        <span class="badge bg-highlight color-white">TAO TO CALL</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="mailto:mail@domain.com">
+                        <i class="fa font-14 fa-envelope color-mail"></i>
+                        <span>mail@domain.com</span>
+                        <span class="badge bg-highlight color-white">TAO TO MAIL</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="https://www.facebook.com/">
+                        <i class="fab font-14 fa-facebook color-facebook"></i>
+                        <span>facebook</span>
+                        <i class="fa fa-link"></i>
+                    </a>        
+                    <a href="https://twitter.com/">
+                        <i class="fab font-14 fa-twitter-square color-twitter"></i>
+                        <span>Twitter</span>
+                        <i class="fa fa-link"></i>
+                    </a>        
+                    <a href="#" class="border-0">
+                        <i class="fab font-14 fa-linkedin color-linkedin"></i>
+                        <span> Linkedin</span>
+                        <i class="fa fa-link"></i>
+                    </a>        
+
+                </div>
+            </div>
+        </div>
+
+       
+        <!-- footer and footer card-->
+        <div class="footer" data-menu-load="menu-footer.html"></div>  
+    </div>    
+    <!-- end of page content-->
+    
+    
+    <div id="menu-share" 
+         class="menu menu-box-bottom menu-box-detached rounded-m" 
+         data-menu-load="menu-share.html"
+         data-menu-height="420" 
+         data-menu-effect="menu-over">
+    </div>    
+    
+    <div id="menu-highlights" 
+         class="menu menu-box-bottom menu-box-detached rounded-m" 
+         data-menu-load="menu-colors.html"
+         data-menu-height="510" 
+         data-menu-effect="menu-over">        
+    </div>
+    
+ <div id="menu-main" class="menu menu-box-right menu-box-detached -m " data-menu-width="260" data-menu-load="menu-main.html" data-menu-active="nav-welcome" data-menu-effect="menu-over" style="display: block; width: 260px;"><div class="menu-header">
+<a href="#" data-toggle-theme="" class="border-right-0"><i class="fa font-12 color-yellow-dark fa-lightbulb"></i></a>
+<a href="#" data-menu="menu-highlights" class="border-right-0"><i class="fa font-12 color-green-dark fa-brush"></i></a>
+<a href="#" data-menu="menu-share" class="border-right-0"><i class="fa font-12 color-red-dark fa-share-alt"></i></a>
+<a href="index-settings.html" class="border-right-0"><i class="fa font-12 color-blue-dark fa-cog"></i></a>
+<a href="#" class="close-menu border-right-0"><i class="fa font-12 color-red-dark fa-times"></i></a>
+</div>
+<div class="menu-logo text-center">
+<a href="#"><img class="rounded-circle bg-highlight" width="80" src="images/avatars/5s.png"></a>
+<h1 class="pt-3 font-800 font-28 text-uppercase">Title of Minte</h1>
+<p class="font-11 mt-n2">Put a little <span class="color-highlight">History</span> in your life.</p>
+</div>
+<div class="menu-items mb-4">
+<h5 class="text-uppercase opacity-20 font-12 pl-3">Menu</h5>
+<a id="nav-welcome" href="index.html" class="nav-item-active">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" data-feather-line="1" data-feather-size="16" data-feather-color="blue-dark" data-feather-bg="blue-fade-light" style="stroke-width: 1; width: 16px; height: 16px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+<span>Home</span>
+<em class="badge bg-highlight color-white">HOT</em>
+<i class="fa fa-circle"></i>
+</a>
+<a id="nav-starters" href="about.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" data-feather-line="1" data-feather-size="16" data-feather-color="yellow-dark" data-feather-bg="yellow-fade-light" style="stroke-width: 1; width: 16px; height: 16px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+<span>About Us</span>
+<i class="fa fa-circle"></i>
+</a>
+<a id="nav-features" href="https://play.google.com/store/apps/details?id=com.rovio.angrybirds&hl=en">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart" data-feather-line="1" data-feather-size="16" data-feather-color="red-dark" data-feather-bg="red-fade-light" style="stroke-width: 1; width: 16px; height: 16px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+<span>Rate us</span>
+<i class="fa fa-circle"></i>
+</a>
+<a id="nav-pages" href="contactus.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file" data-feather-line="1" data-feather-size="16" data-feather-color="brown-dark" data-feather-bg="brown-fade-light" style="stroke-width: 1; width: 16px; height: 16px;"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+<span>Contact Us</span>
+<i class="fa fa-circle"></i>
+</a>
+<a href="#" class="close-menu">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" data-feather-line="3" data-feather-size="16" data-feather-color="red-dark" data-feather-bg="red-fade-dark" style="stroke-width: 3; width: 16px; height: 16px;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<span>Close</span>
+<i class="fa fa-circle"></i>
+</a>
+</div>
+<div class="text-center" style="margin-top: 100%;">
+<a href="#" class="icon icon-xs mr-1 rounded-s bg-facebook"><i class="fab fa-facebook"></i></a>
+<a href="#" class="icon icon-xs mr-1 rounded-s bg-twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" class="icon icon-xs mr-1 rounded-s bg-instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" class="icon icon-xs mr-1 rounded-s bg-linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" class="icon icon-xs rounded-s bg-whatsapp"><i class="fab fa-whatsapp"></i></a>
+<p class="mb-0 pt-3 font-10 opacity-30">Copyright <span class="copyright-year"></span> Enabled. All rights reserved</p>
+</div>
+</div>
+
+
+
+    
+</div>    
+
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
